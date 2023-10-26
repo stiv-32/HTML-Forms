@@ -1,34 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
     <title>My formulario</title>
 </head>
+
 <body>
     <h1>GeeksforGeeks Survey Form</h1>
-    <div>
-       <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+    <div class="container">
+
+        <div class="formulario">
+            <div class="camp">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required class="camp_input"/>
+            </div>
+
+            <div class="camp">
+                <label for="email">Email</label>
+                <input type="correo" id="email" placeholder="Enter your email" required class="camp_input"/>
+            </div>
+
+            <div class="camp">
+                <label for="edad">Age</label>
+                <input type="edad" id="edad" placeholder="Enter your age" required class="camp_input"/>
+            </div>
+
+            <div class="camp">
+                <p>Which option best describes you?</p>
+                <select class="camp_input" id="seleccion">
+                    <option>student</option>
+                    <option value="programator">programator</option>
+                    <option value="teacher">teacher</option>
+                    <option value="doctor">doctor</option>
+                    <option value="engineer">engineer</option>
+                </select>
+            </div>
+
+
+            <div class="camp">
+                <p>Would you recommed GeeksforGeeks a to friends? </p>
+                <label><input class="camp_radio" type="radio" name="camp" >Yes</label>
+                <label><input class="camp_radio" type="radio" name="camp" >No</label>
+                <label><input class="camp_radio"type="radio" name="camp" >Maybe</label>
+            </div>
+
+            <div class="camp">
+                <p>Languages and Frameworks Known (check all that apply?)</p>
+                <label><input type="checkbox" value="c" class="camp_checkbox">C</label>
+                <label><input type="checkbox" value="c++" class="camp_checkbox">C++</label>
+                <label><input type="checkbox" value="c#" class="camp_checkbox">C#</label>
+                <label><input type="checkbox" value="java" class="camp_checkbox">Java</label>
+                <label><input type="checkbox" value="phyton" class="camp_checkbox">Phyton</label>
+                <label><input type="checkbox" value="javascript" class="camp_checkbox">JavaScript</label>
+                <label><input type="checkbox" value="react" class="camp_checkbox">React</label>
+                <label><input type="checkbox" value="angular" class="camp_checkbox">Angular</label>
+                <label><input type="checkbox" value="djiango" class="camp_checkbox">Django</label>
+                <label><input type="checkbox" value="spring" class="camp_checkbox">Spring</label>
+            </div>
+
+            <div class="camp">
+                <p>Anny comments or suggestions</p>
+                <textarea class="camp_textarea"></textarea>
+            </div>
+
+            <div class="camp">
+                <input type="Submit" value="Submit" class="camp_submit">
+            </div>
         </div>
     </div>
-    <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email" required />
-    </div>
-    <div>
-        <label for="edad">Age</label>
-        <input type="edad" id="edad" placeholder="Enter your age" required />
-    </div>
-    <div>
-        <input list="option">
-        <datalist id="option">
-           <option>student</option>
-           <option>teacher</option>
-           <option>programator</option> 
-           <option>engineer</option>
-          
-
 </body>
+
 </html>

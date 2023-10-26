@@ -1,8 +1,69 @@
-
 body{
-    background-color: rgb(77, 211, 77);
+    background-color: rgb(3, 144, 3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 h1{
     text-align: center;
 }
+
+.formulario{
+    padding: 2.5rem 1.70rem ;
+    margin-left:25% ;
+    margin-right: 25%;
+    background-color: rgb(251, 250, 249); 
+    font-size: 1.1rem;  
+}
+
+.camp{
+   margin: 1rem 0;
+}
+
+.camp_input{
+    display: block;
+    width: 99%;
+    height: 2.4rem;
+    margin-top: 1rem;   
+}
+
+input{
+    height: 2rem;
+}
+
+label{
+    display: flex;
+    align-items: center;
+} 
+
+.camp_radio
+.camp_checkbox{
+    display: inline-block;
+    margin-right: 0.62rem;
+    min-height: 1rem;
+    min-width: 1rem;
+   
+}
+
+.camp_textarea{
+    min-height: 120px;
+    width: 100%;
+    padding: 0.6rem;
+    resize: horizontal;
+}
+
+.camp_submit{
+    display: block;
+    width: 100%;
+    height: 3rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    background-color: green;
+    color: black;
+    font-weight: 600;
+}
+
+.camp_submit:hover{
+    cursor:pointer
+}
+
+
