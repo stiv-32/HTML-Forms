@@ -48,7 +48,7 @@ label{
     min-height: 120px;
     width: 100%;
     padding: 0.6rem;
-    resize: horizontal;
+    resize: vertical;
 }
 
 .camp_submit{
